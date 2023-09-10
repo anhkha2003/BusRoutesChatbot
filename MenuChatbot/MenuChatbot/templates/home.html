@@ -15,36 +15,36 @@
         height: 100vh;
         background-color: #f5e6ca;
         display: flex;
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        flex-direction: column; /* Added flex direction */
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
       }
 
       #chat-container {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center horizontally within the chat container */
-        width: 500px; /* Larger width */
-        height: 600px; /* Larger height */
+        align-items: center;
+        width: 500px; 
+        height: 600px;
         border: 2px solid #9b7653;
-        padding: 15px; /* Increased padding */
+        padding: 15px;
         background-color: #fff;
-        margin-bottom: 15px; /* Increased margin */
+        margin-bottom: 15px;
         overflow-y: scroll;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
 
       #chat-header {
-        font-size: 24px; /* Larger font size */
+        font-size: 24px;
         font-weight: bold;
-        margin-bottom: 10px; /* Increased margin */
-        background-color: #0056b3; /* Brown background color */
-        padding: 10px 20px; /* Increased padding */
-        border-radius: 5px; /* Rounded corners */
-        color: white; /* White text color */
-        position: sticky; /* Keep the header fixed */
-        top: 0; /* Position at the top */
-        z-index: 1; /* Ensure it appears above the chat messages */
+        margin-bottom: 10px;
+        background-color: #0056b3;
+        padding: 10px 20px; 
+        border-radius: 5px;
+        color: white;
+        position: sticky;
+        top: 0; 
+        z-index: 1;
         width: 495px;
         text-align: center;
       }
@@ -53,49 +53,45 @@
         flex: 1;
         width: 100%;
         font-family: Calibri, sans-serif;
-        display: flex; /* Display messages in a column layout */
+        display: flex;
         flex-direction: column;
       }
 
-      /* Style for the chat bubble */
       .chat-bubble {
         background-color: #007BFF;
         color: white;
-        padding: 10px; /* Increased padding */
-        border-radius: 10px; /* Increased border radius */
-        margin: 10px 0; /* Increased margin */
-        max-width: 80%; /* Increased max-width */
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px 0;
+        max-width: 80%; 
         word-wrap: break-word;
-        display: flex; /* Added flex for avatar alignment */
+        display: flex;
         align-items: center;
       }
 
-      /* User messages float to the left */
       .user {
-        background-color: #02386e; /* Blue color for user messages */
+        background-color: #02386e;
+        align-self: flex-end; 
+        float:right;
       }
 
-      /* Bot messages float to the right */
       .bot {
-        float: right;
         clear: both;
-        background-color: #007BFF; /* Blue color for bot messages */
-        align-self: flex-end; /* Align bot messages to the right */
-        text-align: right; /* Right-align the text inside bot messages */
+        background-color: #007BFF;
+        align-self: flex-start;
       }
 
       .avatar {
-        width: 40px; /* Size of the avatar */
-        height: 40px; /* Size of the avatar */
-        border-radius: 50%; /* Make it a circle */
-        margin-right: 10px; /* Spacing between avatar and message text */
-        background-image: url('https://media.istockphoto.com/id/1060696342/vector/robot-icon-chat-bot-sign-for-support-service-concept-chatbot-character-flat-style.jpg?s=612x612&w=0&k=20&c=t9PsSDLowOAhfL1v683JMtWRDdF8w5CFsICqQvEvfzY='); /* Set the default profile picture */
-        background-size: cover; /* Make the image cover the circle */
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+        background-image: url('https://img.freepik.com/premium-vector/account-icon-user-icon-vector-graphics_292645-552.jpg');
+        background-size: cover;
       }
 
-      /* Bot avatar */
       .bot-avatar {
-        background-image: url('https://img.freepik.com/premium-vector/account-icon-user-icon-vector-graphics_292645-552.jpg'); /* Replace with the URL of the bot's avatar image */
+        background-image: url('https://media.istockphoto.com/id/1060696342/vector/robot-icon-chat-bot-sign-for-support-service-concept-chatbot-character-flat-style.jpg?s=612x612&w=0&k=20&c=t9PsSDLowOAhfL1v683JMtWRDdF8w5CFsICqQvEvfzY=');
       }
 
       #message-input-container {
@@ -103,19 +99,19 @@
         flex-direction: row;
         align-items: center;
         width: 100%;
-        padding: 15px; /* Increased padding */
-        position: sticky; /* Keep the input container at the bottom */
-        bottom: 0; /* Position at the bottom */
-        background-color: #fff; /* Match the background color of the chat container */
-        z-index: 1; /* Ensure it appears above the chat messages */
+        padding: 15px;
+        position: sticky;
+        bottom: 0; 
+        background-color: #fff; 
+        z-index: 1; 
       }
 
       #insert-file-button {
         background-color: #007BFF;
         color: white;
         border: none;
-        padding: 10px 15px; /* Adjusted padding */
-        border-radius: 5px; /* Increased border radius */
+        padding: 10px 15px; 
+        border-radius: 5px; 
         cursor: pointer;
       }
 
@@ -126,9 +122,9 @@
       #chat-input {
         flex: 1;
         border: none;
-        padding: 10px; /* Increased padding */
-        border-radius: 5px; /* Increased border radius */
-        margin-right: 10px; /* Increased margin */
+        padding: 10px; 
+        border-radius: 5px; 
+        margin-right: 10px;
         max-width: 100%;
       }
 
@@ -136,8 +132,8 @@
         background-color: #007BFF;
         color: white;
         border: none;
-        padding: 10px 20px; /* Increased padding */
-        border-radius: 5px; /* Increased border radius */
+        padding: 10px 20px;
+        border-radius: 5px; 
         cursor: pointer;
       }
 
@@ -146,45 +142,68 @@
       }
     </style>
     <script>
-      let allMessages = [];
-
-      // Function to scroll to the bottom of the chat container
+      let allMessages = ['{{bot_message}}'];
       function scrollToBottom() {
         var chatContainer = document.getElementById('chat-container');
         chatContainer.scrollTop = chatContainer.scrollHeight;
       }
-
       function sendMessage() {
         var message = $('#chat-input').val();
         $('#chat-window').append('<div class="chat-bubble user"><div class="avatar"></div>' + message + '</div>');
         $('#chat-input').val('');
+        scrollToBottom();
         var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
         allMessages.push(message);
         $.ajax({
-          url: "{% url 'submit' %}",
+          url: "{% url 'submit_view' %}",
           type: 'POST',
-          headers: { "X-CSRFToken": csrftoken },
+          headers: {"X-CSRFToken": csrftoken},
           data: {
-            messages: allMessages,
+            messages: allMessages
           },
-          success: function (data) {
-            $('#chat-window').append('<div class="chat-bubble bot"><div class="bot-avatar avatar"></div><div style="text-align: right;">' + data.message + '</div></div>');
+          success: function(data) {
+            $('#chat-window').append('<div class="chat-bubble bot"><div class="bot-avatar avatar"></div>' + data.message + '</div></div>');
             allMessages.push(data.message);
-            scrollToBottom(); // Call the scroll function after adding a new message
+            scrollToBottom();
           },
-          error: function (error) {
+          error: function(error) {
             console.log('Error:', error);
-          },
+          }
         });
       }
+      function uploadFile(file) {
+        var formData = new FormData();
+        formData.append('file', file);
+        var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
 
-      $(document).ready(function () {
-        $('#send-button').on('click', function () {
-          sendMessage();
+        $.ajax({
+          url: "{% url 'upload_view' %}",
+          type: 'POST',
+          headers: {"X-CSRFToken": csrftoken},
+          data: formData,
+          processData: false,
+          contentType: false,
+          success: function(data) {
+            console.log('Upload successfully')
+          },
+          error: function(error) {
+            console.log('Error:', error);
+          }
         });
-        $('#chat-input').on('keypress', function (e) {
-          if (e.which == 13) {
-            sendMessage();
+      }
+      $(document).ready(function(){
+        $('#chat-window').append('<div class="chat-bubble bot"><div class="bot-avatar avatar"></div>' + '{{bot_message}}' + '</div></div>');
+        $('#send-button').on('click', sendMessage);
+        $('#chat-input').on('keypress', function(e) {
+          if(e.which == 13) {
+            sendMessage()
+          }
+        });
+        $('#fileUploadInput').change(function() {
+          if (this.files.length > 0) {
+            uploadedFile = this.files[0]; 
+            $('#fileName').text(uploadedFile.name); 
+            uploadFile(uploadedFile);
           }
         });
       });
@@ -196,10 +215,12 @@
     <div id="chat-container">
       <div id="chat-window"></div>
       <div id="message-input-container">
-        <button id="insert-file-button" style="color: white; font-weight: bold;">
+        <button id="insert-file-button" onclick="document.getElementById('fileUploadInput').click()" style="color: white; font-weight: bold;">
             <i class="fas fa-paperclip"></i>
         </button>
+        <input id="fileUploadInput" type="file" accept=".txt,.pdf,.docx" style="display: none;">
         <input id="chat-input" type="text" placeholder="Type a message...">
+        <span id="fileName"></span>
         <button id="send-button">Send</button>
       </div>
     </div>
