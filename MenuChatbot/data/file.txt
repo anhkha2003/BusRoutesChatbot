@@ -1,0 +1,49 @@
+Bus Routes Texas A&M University
+
+On Campus:
+
+Route 01 - Bonfire: Commons -> Ross and Bizzell - North -> Ross and Ireland - North -> Asbury Water Tower -> HEEP -> Kleberg - Outbound -> Rec Center -> Lot 100G -> Reed Arena and go back to Commons in same route in reverse direction
+
+Route 01-04 - Nights & Weekends: Reed Arena -> Lot 100G -> Rec Center -> Kleberg - Outbound -> HEEP -> Asbury Water Tower -> Ross and Ireland - North -> Ross and Bizzell - North -> Wisenbaker - East -> Zachry -> The Gardens -> Becky Gates Center -> Hensel @ Texas -> Commons -> and go back to Reed Arena in same route in reverse direction
+
+Route 03 - Yell Practice: MSC -> Beutel -> Wehner - Outbound -> School of Public Health - Outbound -> White Creek 1 -> Route 03O -> Lot 101 -> NCTM -> VTED -> and go back to MSC in same route in reverse direction
+
+Route 03-05 - Nights & Weekends: MSC -> Beutel -> Wehner - Outbound -> School of Public Health - Outbound -> White Creek 1 -> Technology Loop -> Lot 41/43 -> Bush School - Inbound -> and go back to MSC in same route in reverse direction
+
+Route 04 - Gig Em: Becky Gates Center -> The Gardens -> Wisenbaker - East -> Ross and Bizzell - South -> Ross and Ireland - South -> Fish Pond -> Asbury Water Tower -> and go back to Becky Gates Centerin same route in reverse direction 
+
+Route 05 - Bush School: MSC -> Kleberg - Outbound -> Kleberg - Outbound -> Ag Building - Outbound -> GGB -> Bush School - Outbound -> GERB -> Lot 108/UPD -> and go back to MSC in same route in reverse direction
+
+Route 06 - 12th Man: MSC -> Beutel -> Wehner - Outbound -> Vet School - Outbound -> Transit - Outbound -> Facilities Services - Outbound -> GSC -> and go back to MSC in same route in reverse direction
+
+Route 07 - Airport: Easterwood Airport -> Wisenbaker - East -> Texas A&M Hotel/Joe Routt -> and go back to Easterwood Airportin same route in reverse direction
+
+Route 08 - Howdy: MSC -> Beutel -> Kleberg - Outbound -> Reed Arena/Lot 97 -> Physical Education - Outbound -> Park West -> and go back to MSC in same route in reverse direction
+
+Off Campus:
+
+Route 12 - Reveille: Trigon -> Lincoln @ Nimitz - Outbound -> Lincoln @ Ashburn - Outbound -> April Bloom - Outbound -> Spring Loop @ Tarrow -> Tarrow/East 29th -> Carter Creek Shopping Center - Outbound -> Broadmoor - Outbound -> Blinn - Bryan -> and go back to Trigon in same route in reverse direction
+
+Route 15 - Old Army: MSC -> Fish Pond -> College Main Parking Garage - Outbound -> Spruce Street - Outbound -> College Main @ Clay - Outbound -> Old College -> Wellborn 1 -> Wellborn 2 -> Wellborn @ Tee -> Villa Maria @ Green Street -> and go back to MSC in same route in reverse direction
+
+Route 22 - Excel: Trigon -> University Oaks @ George Bush East - Outbound -> University Oaks @ Stallings - Outbound -> University Oaks @ Athens - Outbound -> University Oaks @ Rhett Butler - Outbound -> and go back to Trigon in same route in reverse direction
+
+Route 26 - Rudder: Trigon -> Southside Rec Center -> Anderson @ Park Place - South -> Anderson Park -> Anderson @ Holik -> Anderson @ Brentwood -> Southwest Parkway @ Anderson -> Southwest Parkway @ Cornell -> Southwest Parkway @ Dartmouth -> Wolf Pen Creek -> and go back to Trigon in same route in reverse direction
+
+Route 27 - Ring Dance: Trigon -> Anderson @ Park Place - Outbound -> Anderson Park -> HEB - Outbound -> Holleman@ Lassie Lane - Outbound -> Holleman@ Lassie Lane - Outbound -> Holleman @ Dartmouth - Outbound -> Dartmouth -> Holleman @ Wolf Pen Creek -> and go back to Trigon in same route in reverse direction
+
+Route 31 - Elephant Walk: Trigon -> Southwest Parkway @ Wellborn - Outbound -> Southwest Parkway - Outbound -> Southwest Parkway @ Welsh - Outbound -> Medina -> and go back to Trigon in same route in reverse direction
+
+Route 34 - Fish Camp: Trigon -> Welsh @ First Baptist Church -> Welsh @ Navarro - Outbound -> Welsh @ Deacon - Outbound -> Rock Prairie - Outbound -> Deacon West -> and go back to Trigon in same route in reverse direction
+
+Route 35 - Hullabaloo: MSC -> Kleberg - Outbound -> Physical Education - Outbound -> Penberthy @ Park West - Outbound -> Jones-Butler @ Woodsman - Outbound -> Jones Butler @ Gridiron -> Jones Butler @ Harvey Mitchell -> and go back to MSC in same route in reverse direction
+
+Route 36 - Matthew Gaines: Trigon -> Marion Pugh @ George Bush - Outbound -> Park West 1 -> Park West 2 -> Jones-Butler @ Woodsman - Outbound -> John Crompton Park -> and go back to Trigon in same route in reverse direction
+
+Route 40 - Century Tree: MSC -> Kleberg - Outbound -> Physical Education - Outbound -> Penberthy @ Park West - Outbound -> Jones-Butler @ Woodsman - Outbound -> Holleman @ Legacy -> Holleman South -> Junction Boys -> General @ Holleman -> and go back to MSC in same route in reverse direction
+
+Route 47 - Rellis: MSC -> Fish Pond -> Wisenbaker - East -> Vet School - Outbound -> Transit - Outbound -> Facilities Services - Outbound -> Turf Lab - Outbound -> Equine Center - Outbound -> Parson's Mounted Cavalry - Outbound -> Atlas Pear Dr - Outbound -> Biomedical Way - Outbound -> Health Science Center -> Blinn - RELLIS -> go back to MSC in same route in reverse direction
+
+Route 47-48 - Nights & Weekends: MSC -> Fish Pond -> Wisenbaker - East -> Vet School - Outbound -> Transit - Outbound -> Facilities Services - Outbound -> Turf Lab - Outbound -> Equine Center - Outbound -> Atlas Pear Dr - Outbound -> Biomedical Way - Outbound -> Health Science Center -> Blinn - RELLIS -> go back to MSC in same route in reverse direction
+
+Route 48 - Rellis Circulator: RIC -> CIR/TTI -> Blinn - RELLIS Circulator -> Workforce Education Complex -> Energy System Lab -> and go back to RIC in same route in reverse direction

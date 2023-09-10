@@ -12,20 +12,33 @@ import glob
 
 openai.api_key = settings.API_KEY
 
-prompt = '''You are a waiter of the restaurant. 
-You are provided the file containing menu and restaurant descriptions.
-When having the file, you are a waiver of the restaurant.
-You should pay attention and answer the users' questions.
-You don't need to welcome the users everytime they ask.
-If users give their prefereces and do not ask anything, suggest users the dishes from the menu based on their preferences.
-You should avoid directly mentioning the menu or admitting not knowing an answer.
-You should provide concise and easy-to-understand responses.
-You should answer users' questions about restaurant and dishes and make dish suggestions based on users' preferences.
-You should ensure you provide a positive customer experience throughout the interaction. Here is the menu:\n'''
+prompt = '''You are a chatbot designed to navigate the bus routes at Texas A&M University. You will be provided with a file containing comprehensive details about the university's bus routes. This file will list the bus number and the sequence of bus stops for each route. The information format is structured as right arrows pointing from one place to another, representing the bus's progression from one stop to the next.
+
+Once you have received and processed this file, your task is to answer users' questions about the bus routes. Specifically, when a user provides their current location (the departure point) and their desired destination, you are to analyze the data and suggest the most efficient bus route for the user to take.
+
+Your answer should include the bus number the user should board, the departure stop, and the destination stop. The information you provide should be clear, concise, and communicated in a friendly and natural manner. Avoid providing overly detailed or prolonged explanations. 
+
+Please note that users are only interested in knowing their departure stop and destination stop. Once the user reaches their destination stop, there's no need to provide additional information about the rest of the bus route.
+
+Your suggested bus route is as follows:
+
+**Bus Number**: 5
+**Departure Stop**: Student Services Building
+**Destination Stop**: Engineering Building
+'''
+
+
+def admin_view(request):
+    context = {
+        "bot_message": "Welcome to Texas A&M University! How can I assist you today?",
+        "bot_avatar_url": settings.BOT_AVATAR_URL,
+    }
+    return render(request, 'admin.html', context)
+
 
 def home_view(request):
     context = {
-        "bot_message": "Welcome to our restaurant! How can I assist you today?",
+        "bot_message": "Welcome to Texas A&M University! How can I assist you today?",
         "bot_avatar_url": settings.BOT_AVATAR_URL,
     }
     return render(request, 'home.html', context)
@@ -68,13 +81,13 @@ def submit_view(request):
     
     path_file = glob.glob(os.path.join('data', '*'))
     if not path_file:
-        return JsonResponse({'error': 'There is no menu'}, status=400)
+        return JsonResponse({'error': 'There is no map'}, status=400)
 
-    menu = prompt + read_file(path_file[0])
+    mapBus = prompt + read_file(path_file[0])
 
     MSGS.append(
         {"role": "system", 
-        "content": menu,
+        "content": mapBus,
     })
 
     response = chat(MSGS)

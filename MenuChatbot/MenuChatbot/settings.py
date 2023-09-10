@@ -124,4 +124,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 BOT_AVATAR_URL = 'https://img.freepik.com/free-vector/cute-cat-computer-with-mouse-cartoon-vector-icon-illustration-animal-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3695.jpg?w=826&t=st=1694328046~exp=1694328646~hmac=c2809fce5d75b11ee8ab94bd60e660b90c552dce8695467fef3ea3dbca9324d6'
-API_KEY = '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'
+API_KEY = 'sk-...' # enter OPENAI API_KEY to use
