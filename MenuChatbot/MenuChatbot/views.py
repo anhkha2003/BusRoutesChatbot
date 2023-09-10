@@ -17,6 +17,8 @@ prompt = "You are an employee of the restaurant/coffee. Once provided with the m
 def home_view(request):
     context = {
         "bot_message": "Hello! How can I assist you today?",
+        "user_avatar_url": settings.USER_AVATAR_URL,
+        "bot_avatar_url": settings.BOT_AVATAR_URL,
     }
     return render(request, 'home.html', context)
 

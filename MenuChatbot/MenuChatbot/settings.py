@@ -123,4 +123,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+USER_AVATAR_URL = 'https://img.freepik.com/premium-vector/account-icon-user-icon-vector-graphics_292645-552.jpg'
+BOT_AVATAR_URL = 'https://media.istockphoto.com/id/1060696342/vector/robot-icon-chat-bot-sign-for-support-service-concept-chatbot-character-flat-style.jpg?s=612x612&w=0&k=20&c=t9PsSDLowOAhfL1v683JMtWRDdF8w5CFsICqQvEvfzY='
 API_KEY = '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'
