@@ -13,10 +13,10 @@
         margin: 0;
         padding: 0;
         height: 100vh;
-        background-color: #f5e6ca;
+        background-color: #36393f; 
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         flex-direction: column;
       }
 
@@ -24,29 +24,46 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 500px; 
-        height: 600px;
-        border: 2px solid #9b7653;
-        padding: 15px;
-        background-color: #fff;
-        margin-bottom: 15px;
+        width: 800px;
+        height: 100%;
+        border: none; 
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #2f3136; 
         overflow-y: scroll;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-left: 0;
+        border-radius: 8px; 
+      }
+
+      #chat-container::-webkit-scrollbar {
+        width: 0px; 
+      }
+
+      #chat-container::-webkit-scrollbar-track {
+        background-color: #40444b; 
+      }
+
+      #chat-container::-webkit-scrollbar-thumb {
+        background-color: #40444b; 
+        border-radius: 0px; 
       }
 
       #chat-header {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: bold;
-        margin-bottom: 10px;
-        background-color: #0056b3;
-        padding: 10px 20px; 
-        border-radius: 5px;
+        margin-bottom: 5px;
+        background-color: #36393f;
+        padding: 5px 10px;
+        border-radius: 8px;
         color: white;
         position: sticky;
-        top: 0; 
+        top: 0;
         z-index: 1;
-        width: 495px;
+        width: 990px;
         text-align: center;
+        margin-left: 0;
       }
 
       #chat-window {
@@ -58,87 +75,176 @@
       }
 
       .chat-bubble {
-        background-color: #007BFF;
+        clear: both;
+        display: flex;
+        flex-direction: column;
+        background-color: #40444b; 
         color: white;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 8px; 
         margin: 10px 0;
-        max-width: 80%; 
+        max-width: 80%;
         word-wrap: break-word;
         display: flex;
-        align-items: center;
+        align-items: flex-start; 
+        position: relative;
+        font-size: 18px;
       }
 
       .user {
-        background-color: #02386e;
-        align-self: flex-end; 
-        float:right;
+        background-color: #7289da; 
+        align-self: flex-end;
+        float: right;
       }
 
       .bot {
         clear: both;
-        background-color: #007BFF;
+        background-color: #7289da; 
         align-self: flex-start;
-      }
-
-      .avatar {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin-right: 10px;
-        background-image: url("{{user_avatar_url}}");
-        background-size: cover;
       }
 
       .bot-avatar {
         background-image: url("{{bot_avatar_url}}");
+        width: 30px; 
+        height: 30px; 
+        border-radius: 50%;
+        margin-right: 10px;
+        background-size: cover;
+        position: absolute;
+        top: -20px;
+        left: 0;
+      }
+
+      .assistant-row {
+        display: flex;
+        align-items: center;
+        color: white; 
+      }
+
+      .assistant-text {
+        font-size: 15px; 
+        margin-left: 30px;
+        top: -20px;
+        margin-top: -40px;
       }
 
       #message-input-container {
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 100%;
-        padding: 15px;
+        justify-content: space-between;
+        padding: 10px;
         position: sticky;
         bottom: 0; 
-        background-color: #fff; 
+        background-color: #2f3339; 
         z-index: 1; 
+        width: 100%;
+      }
+
+      .bot-text {
+        padding-left: 0;
+        width: 100%;
+        box-sizing: border-box;
       }
 
       #insert-file-button {
-        background-color: #007BFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #7289da;
         color: white;
         border: none;
-        padding: 10px 15px; 
-        border-radius: 5px; 
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 10px 15px;
         cursor: pointer;
+        margin-left: 5px;
+        font-size: 20px;
       }
 
       #insert-file-button:hover {
-        background-color: #0056b3;
+        background-color: #5865f2;
       }
 
       #chat-input {
+        width: 300px;
+        max-width: 100%;
+        max-width: calc(100% - 110px);
         flex: 1;
         border: none;
-        padding: 10px; 
-        border-radius: 5px; 
+        padding: 10px 20px; 
+        border-radius: 20px; 
         margin-right: 10px;
-        max-width: 100%;
+        background-color: #40444b;
+        font-size: 16px;
+        color: white;
+      }
+
+      #chat-input::placeholder {
+        color: #888;
+      }
+
+      #buttons-container {
+        display: flex;
+        flex-direction: row;
       }
 
       #send-button {
-        background-color: #007BFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #7289da;
         color: white;
         border: none;
-        padding: 10px 20px;
-        border-radius: 5px; 
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%; 
         cursor: pointer;
+        margin-left: 5px;
+        font-size: 26px;
+        padding: 10px 20px;
       }
 
       #send-button:hover {
-        background-color: #0056b3;
+        background-color: #5865f2;
+      }
+
+      #upload-message {
+        margin-left: 10px;
+      }
+
+      @keyframes dots {
+        0%, 20% {
+          color: rgba(0,0,0,0);
+          text-shadow:
+            .25em 0 0 rgba(0,0,0,0),
+            .5em 0 0 rgba(0,0,0,0);
+        }
+        40% {
+          color: black;
+          text-shadow:
+            .25em 0 0 rgba(0,0,0,0),
+            .5em 0 0 rgba(0,0,0,0);
+        }
+        60% {
+          text-shadow:
+            .25em 0 0 black,
+            .5em 0 0 rgba(0,0,0,0);
+        }
+        80%, 100% {
+          text-shadow:
+            .25em 0 0 black,
+            .5em 0 0 black;
+        }
+      }
+
+      .loading:after {
+        content: '...';
+        font-size: 15px;
+        animation: dots 1s steps(5, end) infinite;
       }
     </style>
     <script>
@@ -149,11 +255,19 @@
       }
       function sendMessage() {
         var message = $('#chat-input').val();
-        $('#chat-window').append('<div class="chat-bubble user"><div class="avatar"></div>' + message + '</div>');
+        $('#chat-window').append('<div class="chat-bubble user">  ' + message + '</div>');
         $('#chat-input').val('');
         scrollToBottom();
         var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
         allMessages.push(message);
+
+        var botMessage = $('<div class="chat-bubble bot">' +
+                          '<div class="bot-avatar"></div>' +
+                          '<div class="assistant-row">' + 
+                          '<div class="assistant-text">Assistant</div>' +
+                          '</div>' +
+                          '<div class="bot-text">' + '</div>' +
+                          '</div>').appendTo('#chat-window');
         $.ajax({
           url: "{% url 'submit_view' %}",
           type: 'POST',
@@ -162,7 +276,12 @@
             messages: allMessages
           },
           success: function(data) {
-            $('#chat-window').append('<div class="chat-bubble bot"><div class="bot-avatar avatar"></div>' + data.message + '</div></div>');
+            botMessage.removeClass().html(
+              '<div class="chat-bubble bot">' +
+              '<div class="bot-avatar avatar"></div>' +
+              '<div class="assistant-row">' + 
+              '<div class="assistant-text">Assistant</div>' +  
+              '</div>' + '<div class="bot-text">' + data.message + '</div>' + '</div>')
             allMessages.push(data.message);
             scrollToBottom();
           },
@@ -192,7 +311,13 @@
         });
       }
       $(document).ready(function(){
-        $('#chat-window').append('<div class="chat-bubble bot"><div class="bot-avatar avatar"></div>' + '{{bot_message}}' + '</div></div>');
+        $('#chat-window').append('<div class="chat-bubble bot">' +
+                                  '<div class="bot-avatar avatar"></div>' +
+                                  '<div class="assistant-row">' + 
+                                  '<div class="assistant-text">Assistant</div>' +  
+                                  '</div>' +
+                                  '<div class="bot-text">' + '{{bot_message}}' + '</div>' +
+                                  '</div>');
         $('#send-button').on('click', sendMessage);
         $('#chat-input').on('keypress', function(e) {
           if(e.which == 13) {
@@ -202,7 +327,7 @@
         $('#fileUploadInput').change(function() {
           if (this.files.length > 0) {
             uploadedFile = this.files[0]; 
-            $('#fileName').text(uploadedFile.name); 
+            alert('Uploaded successfully: ' + uploadedFile.name); 
             uploadFile(uploadedFile);
           }
         });
@@ -215,13 +340,15 @@
     <div id="chat-container">
       <div id="chat-window"></div>
       <div id="message-input-container">
-        <button id="insert-file-button" onclick="document.getElementById('fileUploadInput').click()" style="color: white; font-weight: bold;">
-            <i class="fas fa-paperclip"></i>
-        </button>
-        <input id="fileUploadInput" type="file" accept=".txt,.pdf,.docx" style="display: none;">
         <input id="chat-input" type="text" placeholder="Type a message...">
-        <span id="fileName"></span>
-        <button id="send-button">Send</button>
+        <div id="buttons-container">
+          <button id="insert-file-button" onclick="document.getElementById('fileUploadInput').click()">
+              <i class="fas fa-paperclip"></i>
+          </button>
+          <input id="fileUploadInput" type="file" accept=".txt,.pdf,.docx" hidden>
+          <span id="upload-message"></span>
+          <button id="send-button"><i class="fas fa-arrow-right"></i></button>
+        </div>
       </div>
     </div>
   </body>

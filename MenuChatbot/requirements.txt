@@ -1,1 +1,4 @@
-django PyPDF2 docx openai
+django
+PyPDF2
+docx
+openai
